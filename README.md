@@ -1,2 +1,2 @@
-# dotfiles
-My linux dotfiles! X)
+# FastDotFiles
+My linux dotfiles for my fast machines (>2.0 GHz).
