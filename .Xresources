@@ -1,0 +1,9 @@
+URxvt*depth: 32
+URxvt*fading: 30
+URxvt*background: [80]#190004
+URxvt*foreground: #ffbfe3
+URxvt*font: xft:xos4 terminus:pixelsize=14, xft:Kochi Gothic:antialias=false
+URxvt*scrollBar: False
+URxvt*cursorColor: #ec23ef
+URxvt*cursorColor2: #7606a5
+!URxvt*letterSpace: 1
