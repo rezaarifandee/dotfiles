@@ -2,7 +2,7 @@
 My linux dotfiles for my fast machines (>2.0 GHz).
 
 # Installation
-Run install.sh to install the config files to your home directoru.
+Run install.sh to install the config files to your home directory.
 >./install.sh
 
 # Screenshots
