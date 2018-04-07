@@ -1,6 +1,10 @@
 exec /home/x200/.fehbg
 exec exec compton -b -f --backend xrender --vsync none &
 set $mod Mod1
+set $sup Mod4
+set $vgam VGA1
+set $prim LVDS1
+
 font pango:monospace 8
 focus_follows_mouse off
 workspace_auto_back_and_forth yes
@@ -67,6 +71,38 @@ set $ws8 8:
 set $ws9 9:
 set $ws10 10:
 
+set $wsm1 1
+set $wsm2 2
+set $wsm3 3
+set $wsm4 4
+set $wsm5 5
+set $wsm6 6
+set $wsm7 7
+set $wsm8 8
+set $wsm9 9
+set $wsm10 10
+
+workspace $wsm1  output $vgam
+workspace $wsm2  output $vgam
+workspace $wsm3  output $vgam
+workspace $wsm4  output $vgam
+workspace $wsm5  output $vgam
+workspace $wsm6  output $vgam
+workspace $wsm7  output $vgam
+workspace $wsm8  output $vgam
+workspace $wsm9  output $vgam
+workspace $wsm10 output $vgam
+
+workspace $ws1  output $prim
+workspace $ws2  output $prim
+workspace $ws3  output $prim
+workspace $ws4  output $prim
+workspace $ws5  output $prim
+workspace $ws6  output $prim
+workspace $ws7  output $prim
+workspace $ws8  output $prim
+workspace $ws9  output $prim
+workspace $ws10 output $prim
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -80,6 +116,17 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
+bindsym $sup+1 workspace $wsm1
+bindsym $sup+2 workspace $wsm2
+bindsym $sup+3 workspace $wsm3
+bindsym $sup+4 workspace $wsm4
+bindsym $sup+5 workspace $wsm5
+bindsym $sup+6 workspace $wsm6
+bindsym $sup+7 workspace $wsm7
+bindsym $sup+8 workspace $wsm8
+bindsym $sup+9 workspace $wsm9
+bindsym $sup+0 workspace $wsm10
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
@@ -91,6 +138,17 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+
+bindsym $sup+Shift+1 move container to workspace $wsm1
+bindsym $sup+Shift+2 move container to workspace $wsm2
+bindsym $sup+Shift+3 move container to workspace $wsm3
+bindsym $sup+Shift+4 move container to workspace $wsm4
+bindsym $sup+Shift+5 move container to workspace $wsm5
+bindsym $sup+Shift+6 move container to workspace $wsm6
+bindsym $sup+Shift+7 move container to workspace $wsm7
+bindsym $sup+Shift+8 move container to workspace $wsm8
+bindsym $sup+Shift+9 move container to workspace $wsm9
+bindsym $sup+Shift+0 move container to workspace $wsm10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
