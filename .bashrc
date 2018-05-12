@@ -5,6 +5,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export EDITOR="vim"
+export LS_COLORS="di=1;36"
+export browser="qutebrowser"
+
 set -o vi
 bind '"jk":vi-movement-mode'
 #export TERM="linux"
