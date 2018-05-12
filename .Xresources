@@ -1,9 +1,30 @@
 URxvt*depth: 32
 URxvt*fading: 30
-URxvt*background: [80]#190004
+URxvt*background: [70]#190004
 URxvt*foreground: #ffbfe3
 URxvt*font: xft:xos4 terminus:pixelsize=14, xft:Kochi Gothic:antialias=false
 URxvt*scrollBar: False
 URxvt*cursorColor: #ec23ef
 URxvt*cursorColor2: #7606a5
+
+!!URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select
+!!URxvt.resize-font.smaller: C-Down
+!!Urxvr.resize-font.bigger: C-Up
+!!URxvt.matcher.button:	1
+
+!!URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select
+!!URxvt.colorUL:		#4682B4
+!!!! url-select
+!!URxvt.keysym.M-u:	perl:url-select:select_next
+!!URxvt.url-select.launcher: webview
+!!URxvt.url-select.underline: true
+!!!! keyboard-select:
+!!URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!!!! resize-font
+!!URxvt.resize-font.smaller:	C-Down
+!!URxvt.resize-font.bigger:	C-Up
+!!!! Matcher
+!!URxvt.url-launcher:	webview
+!!URxvt.matcher.button:	1
+
 !URxvt*letterSpace: 1
